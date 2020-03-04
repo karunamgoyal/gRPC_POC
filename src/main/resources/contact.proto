@@ -1,0 +1,23 @@
+syntax="proto3";
+
+option java_package = "com.helloworld.modelproto";
+
+option java_multiple_files = true;
+
+message ContactProto{
+    int32 id = 1;
+    string first_name = 2;
+    string last_name = 3;
+    string phone = 4;
+}
+
+message Response{
+    int32 id = 3;
+    string message = 1;
+    int32 STATUS = 2;
+}
+
+message ContactId{
+    int32 id = 1;
+}
+

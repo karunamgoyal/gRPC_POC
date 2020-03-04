@@ -1,0 +1,17 @@
+syntax = "proto3" ;
+
+import "contact.proto";
+
+
+option java_package = "com.helloworld.grpcservices";
+
+option java_multiple_files = true;
+
+
+
+service ContactService{
+    rpc createContact(ContactProto) returns (Response);
+    rpc getContact(ContactId) returns (ContactProto);
+    rpc updateContact(ContactProto) returns (Response);
+    rpc deleteContact(ContactId) returns (Response);
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlmns="http://xmlns.jcp.org/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="my-persistence-unit">
+        <description>Hibernate Properties</description>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/phonebook"/>
+            <property name="javax.persistence.jdbc.user" value="phonebookuser"/>
+            <property name="javax.persistence.jdbc.password" value="phonebookpassword"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
